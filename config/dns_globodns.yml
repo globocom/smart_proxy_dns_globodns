@@ -1,6 +1,7 @@
 ---
 #
-# Configuration file for 'dns_plugin_template' dns provider
+# Configuration file for 'dns_globodns' dns provider
 #
 
-:example_setting: example
+:auth_token: 'foo'
+:host: 'globodns.example.com'

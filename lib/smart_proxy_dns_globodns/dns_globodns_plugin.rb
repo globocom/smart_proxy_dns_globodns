@@ -1,14 +1,14 @@
-require 'smart_proxy_dns_plugin_template/dns_plugin_template_version'
+require 'smart_proxy_dns_globodns/dns_globodns_version'
 
-module Proxy::Dns::PluginTemplate
+module Proxy::Dns::GloboDNS
   class Plugin < ::Proxy::Provider
-    plugin :dns_plugin_template, ::Proxy::Dns::PluginTemplate::VERSION,
-           :factory => proc { |attrs| ::Proxy::Dns::PluginTemplate::Record.record(attrs) }
+    plugin :dns_globodns, ::Proxy::Dns::GloboDNS::VERSION,
+           :factory => proc { |attrs| ::Proxy::Dns::GloboDNS::Record.record(attrs) }
 
     requires :dns, '>= 1.10'
 
     after_activation do
-      require 'smart_proxy_dns_plugin_template/dns_plugin_template_main'
+      require 'smart_proxy_dns_globodns/dns_globodns_main'
     end
   end
 end

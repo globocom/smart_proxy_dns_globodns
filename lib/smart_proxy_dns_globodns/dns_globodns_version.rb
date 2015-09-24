@@ -1,7 +1,7 @@
 module Proxy
   module Dns
-    module PluginTemplate
-      VERSION = '0.1'
+    module GloboDNS
+      VERSION = '0.1.0'
     end
   end
 end

@@ -1,8 +1,8 @@
-# SmartProxyDnsPluginTemplate
+# SmartProxyDnsGloboDNS
 
 *Introduction here*
 
-This plugin adds a new DNS provider for managing records in MyService.
+This plugin adds a new DNS provider for managing records in GloboDNS.
 
 ## Installation
 
@@ -15,11 +15,12 @@ This plugin is compatible with Smart Proxy 1.10 or higher.
 
 To enable this DNS provider, edit `/etc/foreman-proxy/settings.d/dns.yml` and set:
 
-    :use_provider: dns_plugin_template
+    :use_provider: dns_globodns
 
-Configuration options for this plugin are in `/etc/foreman-proxy/settings.d/dns_plugin_template.yml` and include:
+Configuration options for this plugin are in `/etc/foreman-proxy/settings.d/dns_globodns.yml` and include:
 
-* example_setting: change this as an example
+* auth_token: "yourToken"
+* host: "globodnsHost.yourdomain"
 
 ## Contributing
 
@@ -27,7 +28,7 @@ Fork and send a Pull Request. Thanks!
 
 ## Copyright
 
-Copyright (c) *year* *your name*
+Copyright (c) *2015* *Globo.com*
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -41,4 +42,3 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
